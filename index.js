@@ -37,4 +37,4 @@ client.on("guildMemberAdd", async member => {
 	captcha.present(member);
 });
 
-client.login("MTAyMDc2Nzc3MTEzMjQ0ODg4MA.GaeEee.cJSdvc7htUd8EMKGjBIHft2X_D9MNL-LKuZu3g")
+client.login(process.env.token)
