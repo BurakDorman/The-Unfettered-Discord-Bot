@@ -22,6 +22,6 @@
   },
   "dependencies": {
     "discord.js": "14.x",
-	"discord.js-captcha": "file:../src/"
+	"discord.js-captcha": "file:/src"
   }
 }
