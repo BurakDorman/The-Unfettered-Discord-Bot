@@ -6,28 +6,6 @@
   "scripts": {
     "start": "node index.js"
   },
-  "engines": {
-    "node": "12.22.7",
-    "npm": "6.14.15"
-  },
-  "dependencies": {
-    "discord.js": "^13.8.0",
-    "quick.db": "^7.1.1",
-    "express": "^4.17.1",
-    "moment": "^2.27.0",
-    "jimp": "^0.13.0",
-    "common-tags": "^1.8.0",
-    "moment-duration-format": "^2.2.2",
-    "generate-password": "^1.5.0",
-    "snekfetch": "^4.0.4",
-    "request": "^2.88.2",
-    "chalk": "^4.1.0",
-    "node-superfetch": "^0.1.10"
-  },
-  "devDependencies": {
-    "node-loader": "^2.0.0"
-  },
-  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "GNU"
 }
