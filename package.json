@@ -22,6 +22,6 @@
   },
   "dependencies": {
     "discord.js": "13.x",
-	"discord.js-captcha": "file:../Discord.js-Captcha/discord.js-captcha-2.5.3.tgz"
+	"discord.js-captcha": "file:../src/"
   }
 }
