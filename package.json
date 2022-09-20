@@ -1,20 +1,24 @@
 {
-  "name": "unfetterbot",
-  "version": "2.0.0",
-  "description": "The Unfettered",
-  "main": "index.js",
+  "name": "discord.js-captcha",
+  "version": "3.0.4",
+  "description": "A powerful package for Discord.js v14 that allows you to easily create CAPTCHAs for Discord Servers.",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WillTDA/Discord.js-Captcha"
+  },
+  "keywords": [
+    "captcha"
+  ],
   "engines": {
     "node": "16.x"
   },
+  "author": "WillTDA",
+  "license": "Apache-2.0",
   "dependencies": {
-    "discord.js": "14.x",
-    //"discord.js-captcha": "file:/src"
-    "discord.js-captcha": ":local:../Discord.js-Captcha/discord.js-captcha-2.5.3.tgz"
+    "discord.js": "14.x"
   }
 }
