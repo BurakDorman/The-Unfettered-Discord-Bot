@@ -3,8 +3,18 @@ module.exports = {
     createCaptcha: require("./createCaptcha")
 }
 
-const { Client, Intents, MessageEmbed } = require("discord.js");
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.DIRECT_MESSAGES] });
+const { Client, IntentsBitField, EmbedBuilder } = require("discord.js");
+const client = new Client({
+    intents: [
+        IntentsBitField.Flags.Guilds,
+        IntentsBitField.Flags.GuildMessages,
+        IntentsBitField.Flags.MessageContent,
+        IntentsBitField.Flags.GuildMembers,
+        IntentsBitField.Flags.DirectMessages,
+    ]
+});
+//const { Client, GatewayIntentBits, MessageEmbed } = require("discord.js");
+//const client = new Client({ intents: [GatewayIntentBits.FLAGS.GUILDS, GatewayIntentBits.FLAGS.GUILD_MESSAGES, GatewayIntentBits.FLAGS.GUILD_MEMBERS, GatewayIntentBits.FLAGS.DIRECT_MESSAGES] });
 const { Captcha } = require("discord.js-captcha");
 
 const captcha = new Captcha(client, {
