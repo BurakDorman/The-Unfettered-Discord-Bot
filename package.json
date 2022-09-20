@@ -1,0 +1,25 @@
+{
+  "name": "discord.js-captcha",
+  "version": "3.0.4",
+  "description": "A powerful package for Discord.js v14 that allows you to easily create CAPTCHAs for Discord Servers.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillTDA/Discord.js-Captcha.git"
+  },
+  "keywords": [],
+  "engines": {
+    "node": "16.x"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "canvas": "^2.10.1",
+    "discord.js": "^14.3.0",
+    "discord.js-captcha": "^3.0.4"
+  }
+}
