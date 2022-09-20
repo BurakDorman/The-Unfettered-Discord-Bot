@@ -25,4 +25,9 @@ client.on("guildMemberAdd", async member => {
     captcha.present(member); //captcha is created by the package, and sent to the member
 });
 
+client.once('ready', () => {
+    console.log('Ready!');
+  client.user.setPresence({ activities: [{ name: 'Discord' }], status: 'idle' });
+});
+
 client.login(process.env.token)
