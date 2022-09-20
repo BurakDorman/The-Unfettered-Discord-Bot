@@ -29,8 +29,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/WillTDA/Discord.js-Captcha/issues"
-  }
+  "license": "ISC"
 }
