@@ -1,9 +1,11 @@
+const express = require('express');
+const { Client, IntentsBitField, EmbedBuilder } = require("discord.js");
+const { Captcha } = require("discord.js-captcha");
 ////
 const app = express()
 app.get('/', (req, res) => res.send("Bot is Online"))
 app.listen(process.env.PORT, () => console.log('Port is set: ' + process.env.PORT))
 ////
-const { Client, IntentsBitField, EmbedBuilder } = require("discord.js");
 const client = new Client({
 	intents: [
 		IntentsBitField.Flags.Guilds,
@@ -13,8 +15,7 @@ const client = new Client({
 		IntentsBitField.Flags.DirectMessages,
 	]
 });
-const { Captcha } = require("discord.js-captcha");
-
+////
 const captcha = new Captcha(client, {
 	guildID: "804098728952594432",
 	roleID: "809130374587351111", //optional
@@ -30,9 +31,10 @@ const captcha = new Captcha(client, {
 	//customSuccessEmbed: new EmbedBuilder(), //customise the embed that will be sent to the user when the captcha is solved
 	//customFailureEmbed: new EmbedBuilder(), //customise the embed that will be sent to the user when they fail to solve the captcha
 });
-
+////
 client.on("guildMemberAdd", async member => {
 	captcha.present(member);
 });
-
+////
 client.login(process.env.token)
+////
