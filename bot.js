@@ -1,3 +1,8 @@
+////
+const app = express()
+app.get('/', (req, res) => res.send("Bot is Online"))
+app.listen(process.env.PORT, () => console.log('Port is set: ' + process.env.PORT))
+////
 const { Client, IntentsBitField, EmbedBuilder } = require("discord.js");
 const client = new Client({
 	intents: [
