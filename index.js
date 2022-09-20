@@ -1,5 +1,13 @@
 const { Client, Intents, MessageEmbed } = require("discord.js");
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.DIRECT_MESSAGES] });
+const client = new Client({
+    intents: [
+        IntentsBitField.Flags.Guilds,
+        IntentsBitField.Flags.GuildMessages,
+        IntentsBitField.Flags.MessageContent, //IMPORTANT: make sure you enable "Message Content Intent" in the dev portal!
+        IntentsBitField.Flags.GuildMembers,
+        IntentsBitField.Flags.DirectMessages,
+    ]
+});
 const { Captcha } = require("discord.js-captcha");
 
 const captcha = new Captcha(client, {
@@ -33,8 +41,8 @@ const captcha = new Captcha(client, {
 // });
 
 client.on("guildMemberAdd", async member => {
-	//in your bot application in the dev portal, make sure you have intents turned on!
-	captcha.present(member);
+    //in your bot application in the dev portal, make sure you have intents turned on!
+    captcha.present(member); //captcha is created by the package, and sent to the member
 });
 
 client.login(process.env.token)
