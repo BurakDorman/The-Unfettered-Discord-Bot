@@ -6,22 +6,14 @@
   "scripts": {
     "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WillTDA/Discord.js-Captcha.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/WillTDA/Discord.js-Captcha/issues"
-  },
-  "homepage": "https://github.com/WillTDA/Discord.js-Captcha#readme",
   "engines": {
     "node": "16.x"
   },
   "dependencies": {
     "discord.js": "14.x",
-	"discord.js-captcha": "file:/src"
+    "discord.js-captcha": "file:/src"
   }
 }
