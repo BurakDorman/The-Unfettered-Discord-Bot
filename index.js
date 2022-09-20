@@ -3,9 +3,9 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 const { Captcha } = require("discord.js-captcha");
 
 const captcha = new Captcha(client, {
-	guildID: "915296741471957064",
-	roleID: "1019603474394136626", //optional
-	channelID: "1020993750610223124", //optional
+	guildID: "804098728952594432",
+	roleID: "830880581540904970", //optional
+	channelID: "804098950420103219", //optional
 	sendToTextChannel: true, //optional, defaults to false
 	addRoleOnSuccess: true, //optional, defaults to true. whether you want the bot to add the role to the user if the captcha is solved
 	kickOnFailure: true, //optional, defaults to true. whether you want the bot to kick the user if the captcha is failed
